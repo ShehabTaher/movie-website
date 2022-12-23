@@ -6,8 +6,12 @@ import Watched  from './components/watched';
 import Add from './components/add';
 import './App.css';
 import './lib/font-awesome/css/all.min.css'
+
+import { GlobalProvider } from './context/GlobalState';
+
 function App() {
-  return <h1>
+  return (
+    <GlobalProvider>
     <Router>
       <Header/>
 
@@ -18,7 +22,8 @@ function App() {
         <Route exact path='/add' element={<Add/>} />
       </Routes> 
     </Router>
-  </h1>
+    </GlobalProvider>
+  )
 }
 
 export default App;

@@ -6,7 +6,7 @@ export const header = () => {
         <div className="container">
             <div className='inner-content'>
                 <div className='brand'>
-                  <Link to="/">watchList</Link>
+                  <Link to="/">Shehab Movie Website</Link>
                 </div>
                 <ul className='nav-links'>
                   <li>
